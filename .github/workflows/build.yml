@@ -71,6 +71,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: reactos-${{matrix.compiler}}-${{matrix.arch}}-${{matrix.config}}-${{github.sha}}
-        path: |
-          build
+        path: ${{ github.workspace }}
 
